@@ -505,6 +505,6 @@ Stuff that needs to be added:
 - [ ] DRY (*Don’t Repeat Repeat Yourself*)
 - [ ] Accessibility
 
-### Current Maintainer
+### Current Maintainer(s)
 
 * [Johnie Hjelm](http://github.com/johnie) – [johnie.hjelm@symbio.com](mailto:johnie.hjelm@symbio.com)
