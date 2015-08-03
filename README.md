@@ -162,7 +162,7 @@ Begin every new major section of a CSS project with a title:
 .selector {}
 ```
 
-The title of the section is prefixed with a hash (`#`) symbol to allow us to perform more targeted searches (e.g. `grep`, etc.): instead of searching for just `SECTION-TITLE` – which may yield many results—a more scoped search of `#SECTION-TITLE should return only the section in question.
+The title of the section is prefixed with a hash (`#`) symbol to allow us to perform more targeted searches (e.g. `grep`, etc.): instead of searching for just `SECTION-TITLE` – which may yield many results—a more scoped search of `#SECTION-TITLE` should return only the section in question.
 
 Leave a carriage return between this title and the next line of code (be that a comment, some Sass, or some CSS).
 
@@ -192,7 +192,7 @@ If you are working on a project where each section is its own file, this title s
 
 There will be unavoidable exceptions to this rule—such as URLs, or gradient syntax—which shouldn’t be worried about.
 
-###Anatomy of a Ruleset
+### Anatomy of a Ruleset
 
 Before we discuss how we write out our rulesets, let’s first familiarise ourselves with the relevant terminology:
 
@@ -260,7 +260,7 @@ As well as indenting individual declarations, indent entire related rulesets to 
         .foo__baz {}
 ```
 
-By doing this, a developer can see at a glance that `.foo__baz {}` lives inside `.foo__bar {}` lives inside `.foo {}.
+By doing this, a developer can see at a glance that `.foo__baz {}` lives inside `.foo__bar {}` lives inside `.foo {}`.
 
 This quasi-replication of the DOM tells developers a lot about where classes are expected to be used without them having to refer to a snippet of HTML.
 
@@ -352,7 +352,7 @@ As CSS is something of a declarative language that doesn’t really leave much o
 * What styles something might pass on (intentionally or otherwise);
 * Where the author intended a piece of CSS to be used.
 
-This doesn’t even take into account some of CSS’ many quirks—such as various sates of `overflow triggering block formatting context, or certain transform properties triggering hardware acceleration—that make it even more baffling to developers inheriting projects.
+This doesn’t even take into account some of CSS’ many quirks—such as various sates of `overflow` triggering block formatting context, or certain transform properties triggering hardware acceleration—that make it even more baffling to developers inheriting projects.
 
 As a result of CSS not telling its own story very well, it is a language that really does benefit from being heavily commented.
 
@@ -475,15 +475,15 @@ As a rule, it is unwise to bind your CSS and your JS onto the same class in your
 
 I have known occasions before when trying to refactor some CSS has unwittingly removed JS functionality because the two were tied to each other—it was impossible to have one without the other.
 
-Typically, these are classes that are prepended with `js-, for example:
+Typically, these are classes that are prepended with `js-`, for example:
 
 ```html
 <input type="submit" class="btn  js-btn" value="Follow" />
 ```
 
-This means that we can have an element elsewhere which can carry with style of `.btn {}`, but without the behaviour of `.js-btn.
+This means that we can have an element elsewhere which can carry with style of `.btn {}`, but without the behaviour of `.js-btn`.
 
-### `data-* Attributes
+### `data-*` Attributes
 
 A common practice is to use `data-*` attributes as JS hooks, but this is incorrect. `data-*` attributes, as per the spec, are used **to store custom data** private to the page or application (emphasis mine). `data-*` attributes are designed to store data, not be bound to.
 
@@ -492,10 +492,6 @@ A common practice is to use `data-*` attributes as JS hooks, but this is incorre
 As previously mentioned, these are very simple naming conventions, and ones that don’t do much more than denote three distinct groups of class.
 
 We would encourage you to read up on and further look in to your naming convention in order to provide more functionality.
-
-### Further Reading
-
-* [MindBEMding – getting your head ’round BEM syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
 ---
 
