@@ -50,10 +50,10 @@ At a very high-level, we want
 * Put a space before the opening brace `{` in rule declarations
 * In properties, put a space after, but not before, the `:` character.
 * Put closing braces `}` of rule declarations on a new line
-* Put blank lines between rule declarations
+* Put blank lines between rule declarations (except when they are related selectors?)
 * 80 character wide columns
 * Multi-line CSS
-* Meaningful use of whitespace
+* Meaningful use of whitespace (not very clear)
 
 But, as with anything, the specifics are somewhat irrelevant—consistency is key.
 
@@ -260,7 +260,7 @@ As well as indenting individual declarations, indent entire related rulesets to 
         .foo__baz {}
 ```
 
-By doing this, a developer can see at a glance that `.foo__baz {}` lives inside `.foo__bar {}` lives inside `.foo {}`.
+By doing this, a developer can see at a glance that `.foo__baz {}` lives inside `.foo__bar {}` which lives inside `.foo {}`.
 
 This quasi-replication of the DOM tells developers a lot about where classes are expected to be used without them having to refer to a snippet of HTML.
 
